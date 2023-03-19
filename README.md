@@ -1,4 +1,4 @@
-# **_Ohjelmistotekniikka_, harjoitustyö**
+# **_Ohjelmistotekniikka_, _harjoitustyö_**
 ## Tehtävät
 ### Viikko 1
 [gitlog.txt](laskarit/viikko1/gitlog.txt)
