@@ -107,7 +107,7 @@ commit 83607ad6d8aef01194624c40058a0c6a57f46b59
 Author: Joonas Honkavaara <joonas.honkavaara@hotmail.com>
 Date:   Thu Mar 16 07:25:46 2023 +0200
 
-    tiedosto.txt luotu
+    tiedosto.txt muokattu
 
  tiedosto.txt | 0
  1 file changed, 0 insertions(+), 0 deletions(-)
