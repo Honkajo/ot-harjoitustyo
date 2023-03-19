@@ -1,0 +1,113 @@
+commit b68387b11b2e72b936f319a4191b68d34192ce4e
+Author: Joonas Honkavaara <joonas.honkavaara@hotmail.com>
+Date:   Thu Mar 16 09:54:46 2023 +0200
+
+    file2 poistettu ja file1 uudelleennimetty
+
+ tiedostoja/file2             | 0
+ tiedostoja/{file1 => file22} | 0
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 7d79e13a5102845fb5018682f80b30a6ef78c00a
+Author: Joonas Honkavaara <joonas.honkavaara@hotmail.com>
+Date:   Thu Mar 16 09:43:12 2023 +0200
+
+    Luotu kolme tiedostoa ja hakemisto
+
+ tiedostoja/file1 | 0
+ tiedostoja/file2 | 0
+ tiedostoja/file3 | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 3733f303dee58b9219b196f90358a3754bd3c61d
+Author: Joonas Honkavaara <joonas.honkavaara@hotmail.com>
+Date:   Thu Mar 16 09:21:27 2023 +0200
+
+    Muutokset ja lisäykset
+
+ eka.txt    | 3 +--
+ kolmas.txt | 2 +-
+ 2 files changed, 2 insertions(+), 3 deletions(-)
+
+commit 2de85eb77abeaec2388d5d6c696691072982e999
+Author: Joonas Honkavaara <joonas.honkavaara@hotmail.com>
+Date:   Thu Mar 16 08:40:48 2023 +0200
+
+    Tiedoston nimi muutettu
+
+ tiedosto.txt => eka.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 6ae2c26387a444bddded338ef936d3e64a1a26e3
+Author: Joonas Honkavaara <joonas.honkavaara@hotmail.com>
+Date:   Thu Mar 16 08:39:07 2023 +0200
+
+    Tiedoston nimi muutettu
+
+ toinen.txt | 1 -
+ 1 file changed, 1 deletion(-)
+
+commit 4dac77ba38c834d83eabed223ccd21352f0ee9b4
+Author: Joonas Honkavaara <joonas.honkavaara@hotmail.com>
+Date:   Thu Mar 16 08:30:00 2023 +0200
+
+    Poistin ja lisäsin tekstiä tiedostoon
+
+ tiedosto.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 3283e4766d0fa8ab4f6c3abb022586c83ed6b00e
+Author: Joonas Honkavaara <joonas.honkavaara@hotmail.com>
+Date:   Thu Mar 16 08:25:54 2023 +0200
+
+    Lisäys tiedostoon tiedosto.txt
+
+ tiedosto.txt | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit d9d5c9f6cb2e895926e45fd7e2ceea30a13fe75b
+Author: Joonas Honkavaara <joonas.honkavaara@hotmail.com>
+Date:   Thu Mar 16 08:17:54 2023 +0200
+
+    Lisäsin hakemiston ja sen sisälle tiedoston
+
+ stuff/things.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 590ea72d51512c72b5fb96297c36e77c82e1dbdf
+Author: Joonas Honkavaara <joonas.honkavaara@hotmail.com>
+Date:   Thu Mar 16 07:50:54 2023 +0200
+
+    muutos kahteen tiedostoon
+
+ kolmas.txt | 1 +
+ toinen.txt | 1 +
+ 2 files changed, 2 insertions(+)
+
+commit badd0085db6c88b2a91ebb869865858d3eef8b72
+Author: Joonas Honkavaara <joonas.honkavaara@hotmail.com>
+Date:   Thu Mar 16 07:48:09 2023 +0200
+
+    tiedosto kolmas.txt luotu
+
+ kolmas.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit bc2999f233476dfd9f3c0f17427d66451ac966c2
+Author: Joonas Honkavaara <joonas.honkavaara@hotmail.com>
+Date:   Thu Mar 16 07:36:50 2023 +0200
+
+    muutos ja lisäys
+
+ tiedosto.txt | 1 +
+ toinen.txt   | 0
+ 2 files changed, 1 insertion(+)
+
+commit 83607ad6d8aef01194624c40058a0c6a57f46b59
+Author: Joonas Honkavaara <joonas.honkavaara@hotmail.com>
+Date:   Thu Mar 16 07:25:46 2023 +0200
+
+    tiedosto.txt luotu
+
+ tiedosto.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
