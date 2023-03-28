@@ -7,4 +7,4 @@
 
 ### Viikko 2
 
-
+[vaatimusmaarittely.md](dokumentaatio/vaatimusmaarittely.md) 
