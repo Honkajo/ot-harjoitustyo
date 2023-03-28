@@ -8,3 +8,5 @@
 ### Viikko 2
 
 [vaatimusmaarittely.md](dokumentaatio/vaatimusmaarittely.md) 
+
+[tuntikirjanpito.md](dokumentaatio/tuntikirjanpito.md)
