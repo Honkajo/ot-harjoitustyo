@@ -1,3 +1,4 @@
+```mermaid
 sequenceDiagram
     participant Caller method
     participant Machine constructor
@@ -22,3 +23,4 @@ sequenceDiagram
     Engine ->> Engine: check if engine is running
     Engine ->> FuelTank: consume 10 units of fuel
     FuelTank -->> Engine: return updated fuel_contents
+```
