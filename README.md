@@ -10,3 +10,7 @@
 [vaatimusmaarittely.md](dokumentaatio/vaatimusmaarittely.md) 
 
 [tuntikirjanpito.md](dokumentaatio/tuntikirjanpito.md)
+
+### Viikko 3
+
+[changelog.md](dokumentaatio/changelog.md)
