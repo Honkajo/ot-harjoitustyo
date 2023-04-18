@@ -15,7 +15,7 @@ Sovelluksen toimintaa on testattu Python-versiolla `3.8`.
 - [Työaikakirjanpito](./dokumentaatio/tuntikirjanpito.md)
 - [Changelog](./dokumentaatio/changelog.md)
 
-## Asennus
+## Komentorivitoiminnot
 
 Tällä hetkellä ohjelman saa avattua komennolla:
 
