@@ -1,16 +1,25 @@
 # **_WalletTracker_**
-## Tehtävät
-### Viikko 1
-[gitlog.txt](laskarit/viikko1/gitlog.txt)
 
-[komentorivi.txt](laskarit/viikko1/komentorivi.txt)
+Sovelluksella käyttäjä pystyy seuraamaan omaa rahankulutustaan ja luomaan budjetteja eri aikarajojen mukaan. Käyttäjä pystyy luomaan oman käyttäjätunnuksen ja salasanan ja kirjautumalla sisään hän pystyy syöttämään tuloja ja menoja. Sovellus seuraa käyttäjän rahankulutusta ja budjettien ylittämistä 
 
-### Viikko 2
+## Python-versio
 
-[vaatimusmaarittely.md](dokumentaatio/vaatimusmaarittely.md) 
+Sovelluksen toimintaa on testattu Python-versiolla `3.8`.
 
-[tuntikirjanpito.md](dokumentaatio/tuntikirjanpito.md)
+## Dokumentaatio
 
-### Viikko 3
+- [Käyttöohje](./dokumentaatio/kayttoohje.md)
+- [Vaatimusmäärittely](./dokumentaatio/vaatimusmaarittely.md)
+- [Arkkitehtuurikuvaus](./dokumentaatio/arkkitehtuuri.md)
+- [Testausdokumentti](./dokumentaatio/testaus.md)
+- [Työaikakirjanpito](./dokumentaatio/tuntikirjanpito.md)
+- [Changelog](./dokumentaatio/changelog.md)
 
-[changelog.md](dokumentaatio/changelog.md)
+## Asennus
+
+Tällä hetkellä ohjelman saa avattua komennolla:
+
+```bash
+python3 WalletTracker.py
+```
+Komento tulee suorittaa src-kansiossa
