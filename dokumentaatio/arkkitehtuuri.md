@@ -1,3 +1,4 @@
+```mermaid
 classDiagram
     class WalletTracker {
         +main_account_screen()
@@ -44,3 +45,4 @@ classDiagram
     Transaction <|-- Revenue
     Budget "1" --> "*" Transaction
     WalletTrackerGUI "1" --> "1" Budget
+```
