@@ -15,9 +15,23 @@ Sovelluksen toimintaa on testattu Python-versiolla `3.8`.
 
 ## Komentorivitoiminnot
 
-Tällä hetkellä ohjelman saa avattua komennolla:
+Ohjelman pystyy suorittaa komennolla:
 
 ```bash
-python3 WalletTracker.py
+poetry run invoke start
 ```
-Komento tulee suorittaa src-kansiossa
+Testit voi suorittaa komennolla:
+
+```bash
+poetry run invoke test
+```
+Testikattavuusraportin voi luoda komennolla:
+
+```bash
+poetry run invoke coverage-report
+```
+pylint-tarkistukset voi suorittaa komennolla:
+
+```bash
+poetry run invoke lint
+```
