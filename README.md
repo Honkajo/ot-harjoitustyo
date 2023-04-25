@@ -30,7 +30,7 @@ Testikattavuusraportin voi luoda komennolla:
 ```bash
 poetry run invoke coverage-report
 ```
-pylint-tarkistukset voi suorittaa komennolla:
+Pylint-tarkistukset voi suorittaa komennolla:
 
 ```bash
 poetry run invoke lint
