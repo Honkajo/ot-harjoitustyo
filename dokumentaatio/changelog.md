@@ -21,3 +21,10 @@
 - Käyttäjä voi antaa tuloille tai menoille määrän, nimen sekä päivämäärän
 - Käyttäjä voi tarkastella tapahtumia
 - Käyttäjä voi tarkastella tämän hetken saldoa
+
+## Viikko 5
+
+- Lisätty tasks-tiedosto invoke komentoa varten
+- Lisätty "poista tapahtuma"-painike
+- Käyttäjä voi poistaa syötettyjä tapahtumia
+- Lisätty taskit testeille, coverage-raportille, ohjelman aloitukselle sekä koodin formatoinnille
