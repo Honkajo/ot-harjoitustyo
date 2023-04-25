@@ -7,13 +7,16 @@ class Transaction:
     def __str__(self):
         return f"{self.description} ({self.date}): {self.amount}"
 
+
 class Expense(Transaction):
     def __init__(self, amount, description, date):
         super().__init__(-abs(amount), description, date)
 
+
 class Revenue(Transaction):
     def __init__(self, amount, description, date):
         super().__init__(abs(amount), description, date)
+
 
 class Budget:
     def __init__(self):
@@ -28,7 +31,8 @@ class Budget:
         self.transactions.append(revenue)
 
     def display_transactions(self):
-        transactions = '\n'.join([str(transaction) for transaction in self.transactions])
+        transactions = '\n'.join([str(transaction)
+                                 for transaction in self.transactions])
         return transactions
 
     def get_balance(self):
