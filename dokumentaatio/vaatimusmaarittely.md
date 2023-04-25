@@ -8,6 +8,7 @@ Sovelluksessa on tämän hetken suunnitelman mukaan vain normaali käyttäjä, m
 -Käyttäjä voi luoda käyttäjätunnuksen ja salasanan ja kirjautua sisään omalle käyttäjätililleen.(tehty)\
 -Käyttäjä voi kirjautuneena syöttää omia menoja ja tuloja järjestelmään(tehty)\
 -Järjestelmä tallentaa syötetyt tiedot listaksi.
+-Käyttäjä voi poistaa syötettyjä tapahtumia(tehty)
 ## Jatkokehitysideoita
 Ohjelmaa voidaan kehittää ajan puitteissa esimerkiksi seuraavilla ominaisuuksilla:
 - Budjettisuunnittelutyökalu: Sovellus voi sisältää työkalun, jonka avulla käyttäjä voi suunnitella päivä-, viikko-, kuukausi- tai vuosibudjetin.
