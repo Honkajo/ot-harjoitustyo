@@ -12,7 +12,7 @@ Sovelluksen toimintaa on testattu Python-versiolla `3.8`.
 - [Arkkitehtuurikuvaus](./dokumentaatio/arkkitehtuuri.md)
 - [Työaikakirjanpito](./dokumentaatio/tuntikirjanpito.md)
 - [Changelog](./dokumentaatio/changelog.md)
-- [Release 1](./releases/tag/viikko5)
+- [Release 1](https://github.com/Honkajo/ot-harjoitustyo/releases/tag/viikko5)
 
 ## Komentorivitoiminnot
 
