@@ -49,13 +49,17 @@ class WalletTrackerGUI:
         self.add_revenue_button.grid(row=5, column=2, padx=10, pady=10)
 
         self.display_transactions_button = tk.Button(
-            self.root,text="Näytä tapahtumat", command=self.display_transactions)
+            self.root, text="Näytä tapahtumat", command=self.display_transactions)
         self.display_transactions_button.grid(
             row=6, column=0, padx=10, pady=10)
 
         self.display_balance_button = tk.Button(
             self.root, text="Näytä saldo", command=self.display_balance)
         self.display_balance_button.grid(row=6, column=1, padx=10, pady=10)
+
+        self.delete_transaction_button = tk.Button(
+            self.root, text="Poista tapahtuma", command=self.delete_transaction)
+        self.delete_transaction_button.grid(row=6, column=2, padx=10, pady=10)
 
     def add_expense(self):
         amount = float(self.amount_entry.get())
@@ -84,3 +88,9 @@ class WalletTrackerGUI:
         balance = self.budget.get_balance()
         self.balance_text.delete("1.0", tk.END)
         self.balance_text.insert(tk.END, f"${balance:.2f}")
+
+    def delete_transaction(self):
+        index = self.transactions_text.index(tk.CURRENT).split('.', 1)[0]
+        index = int(index) - 1
+        self.budget.delete_transaction(index)
+        self.display_transactions()

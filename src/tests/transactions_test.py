@@ -43,10 +43,3 @@ class TestTransactions(unittest.TestCase):
         self.assertEqual(revenue.amount, 200)
         self.assertEqual(revenue.description, "Palkka")
         self.assertEqual(revenue.date, "2022-07-04")
-
-    
-
-
-
-
-    

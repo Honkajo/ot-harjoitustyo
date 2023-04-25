@@ -37,3 +37,6 @@ class Budget:
 
     def get_balance(self):
         return sum(transaction.amount for transaction in self.transactions)
+
+    def delete_transaction(self, index):
+        del self.transactions[index]
