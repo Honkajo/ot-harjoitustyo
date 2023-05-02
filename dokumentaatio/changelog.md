@@ -28,3 +28,8 @@
 - Lisätty "poista tapahtuma"-painike
 - Käyttäjä voi poistaa syötettyjä tapahtumia
 - Lisätty taskit testeille, coverage-raportille, ohjelman aloitukselle sekä koodin formatoinnille
+
+## Viikko 6
+
+- Käyttäjän syöttämät menot ja tulot tallentuvat erilliseen tiedostoon
+- Alkuikkuna sekä kirjautumisikkuna sulkeutuvat, kun kirjautumisen jälkeen käyttäjätilille siirryttäessä
