@@ -32,4 +32,4 @@
 ## Viikko 6
 
 - Käyttäjän syöttämät menot ja tulot tallentuvat erilliseen tiedostoon
-- Alkuikkuna sekä kirjautumisikkuna sulkeutuvat, kun kirjautumisen jälkeen käyttäjätilille siirryttäessä
+- Alkuikkuna sekä kirjautumisikkuna sulkeutuvat käyttäjätilille siirryttäessä
