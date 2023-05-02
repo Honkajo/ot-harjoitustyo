@@ -5,7 +5,7 @@ Sovelluksen tarkoituksena on tarjota käyttäjälle keinoja seurata ja suunnitel
 Sovelluksessa on tämän hetken suunnitelman mukaan vain normaali käyttäjä, mutta mahdollisesti käyttäjiä saatetaan lisätä projektin edetessä.
 ## Käyttöliittymäluonnos
 ## Perusversion tarjoama toiminnallisuus
--Käyttäjä voi luoda käyttäjätunnuksen ja salasanan ja kirjautua sisään omalle käyttäjätililleen.(tehty)\
+-Käyttäjä voi luoda käyttäjätunnuksen ja salasanan ja kirjautua sisään omalle käyttäjätililleen(tehty)\
 -Käyttäjä voi kirjautuneena syöttää omia menoja ja tuloja järjestelmään(tehty)\
 -Järjestelmä tallentaa syötetyt tiedot käyttäjän tilille(tehty)\
 -Käyttäjä voi poistaa syötettyjä tapahtumia(tehty)
