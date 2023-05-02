@@ -1,64 +1,64 @@
 import tkinter as tk
 from transactions import Budget
 
+class WalletTrackerGUI(tk.Tk):
+    def __init__(self, transactions_file):
+        super().__init__()
+        self.transactions_file = transactions_file
+        self.title("WalletTracker")
 
-class WalletTrackerGUI:
-    def __init__(self, root):
-        self.root = root
-        self.root.title("WalletTracker")
+        self.budget = Budget(transactions_file)
 
-        self.budget = Budget()
-
-        self.expense_label = tk.Label(self.root, text="Syötä tulo tai meno")
+        self.expense_label = tk.Label(self, text="Syötä tulo tai meno")
         self.expense_label.grid(row=0, column=0, padx=10, pady=10)
 
-        self.amount_label = tk.Label(self.root, text="Määrä:")
+        self.amount_label = tk.Label(self, text="Määrä:")
         self.amount_label.grid(row=1, column=0, padx=10, pady=10)
 
-        self.description_label = tk.Label(self.root, text="Kuvaus:")
+        self.description_label = tk.Label(self, text="Kuvaus:")
         self.description_label.grid(row=2, column=0, padx=10, pady=10)
 
-        self.date_label = tk.Label(self.root, text="Aika (YYYY-MM-DD):")
+        self.date_label = tk.Label(self, text="Aika (YYYY-MM-DD):")
         self.date_label.grid(row=3, column=0, padx=10, pady=10)
 
-        self.balance_label = tk.Label(self.root, text="Saldo:")
+        self.balance_label = tk.Label(self, text="Saldo:")
         self.balance_label.grid(row=5, column=0, padx=10, pady=10)
 
-        self.amount_entry = tk.Entry(self.root)
-        self.amount_entry.grid(row=1, column=1, padx=10, pady=10)
+        self.amount_entry = tk.Entry(self)
+        self.amount_entry.grid(row=1, column=1, padx=0, pady=10)
 
-        self.description_entry = tk.Entry(self.root)
+        self.description_entry = tk.Entry(self)
         self.description_entry.grid(row=2, column=1, padx=10, pady=10)
 
-        self.date_entry = tk.Entry(self.root)
+        self.date_entry = tk.Entry(self)
         self.date_entry.grid(row=3, column=1, padx=10, pady=10)
 
-        self.transactions_text = tk.Text(self.root, height=10, width=50)
+        self.transactions_text = tk.Text(self, height=10, width=50)
         self.transactions_text.grid(
             row=4, column=0, columnspan=2, padx=10, pady=10)
 
-        self.balance_text = tk.Text(self.root, height=1, width=20)
+        self.balance_text = tk.Text(self, height=1, width=20)
         self.balance_text.grid(row=5, column=1, padx=10, pady=10)
 
         self.add_expense_button = tk.Button(
-            self.root, text="Lisää meno", command=self.add_expense)
+            self, text="Lisää meno", command=self.add_expense)
         self.add_expense_button.grid(row=4, column=2, padx=10, pady=10)
 
         self.add_revenue_button = tk.Button(
-            self.root, text="Lisää tulo", command=self.add_revenue)
-        self.add_revenue_button.grid(row=5, column=2, padx=10, pady=10)
+            self, text="Lisää tulo", command=self.add_revenue)
+        self.add_revenue_button.grid(row=5, column=2, padx=0, pady=10)
 
         self.display_transactions_button = tk.Button(
-            self.root, text="Näytä tapahtumat", command=self.display_transactions)
+            self, text="Näytä tapahtumat", command=self.display_transactions)
         self.display_transactions_button.grid(
             row=6, column=0, padx=10, pady=10)
 
         self.display_balance_button = tk.Button(
-            self.root, text="Näytä saldo", command=self.display_balance)
+            self, text="Näytä saldo", command=self.display_balance)
         self.display_balance_button.grid(row=6, column=1, padx=10, pady=10)
 
         self.delete_transaction_button = tk.Button(
-            self.root, text="Poista tapahtuma", command=self.delete_transaction)
+            self, text="Poista tapahtuma", command=self.delete_transaction)
         self.delete_transaction_button.grid(row=6, column=2, padx=10, pady=10)
 
     def add_expense(self):
