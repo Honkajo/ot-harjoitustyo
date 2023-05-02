@@ -13,4 +13,6 @@
 | 17.4. | 2    | Kirjautumisjärjestelmän sekä graafisen käyttöliittymän suunnittelu ja toteuttaminen|
 | 18.4. | 6    | Kirjautumisjärjestelmän viimeistely ja testien suunnittelu|
 | 25.4. | 8    | Ohjelmaan lisätty ominaisuus poistaa syötettyjä tapahtumia. Invoke-taskien luonti.
+| 28.4. | 3    | Uuden toiminnallisuuden luonnin aloittaminen
+| 28.4. | 6    | Käyttäjän syöttämien menojen ja tulojen tallentaminen erilliseen tiedostoon
 | yht   | 47   |
