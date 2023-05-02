@@ -7,7 +7,7 @@ Sovelluksessa on tämän hetken suunnitelman mukaan vain normaali käyttäjä, m
 ## Perusversion tarjoama toiminnallisuus
 -Käyttäjä voi luoda käyttäjätunnuksen ja salasanan ja kirjautua sisään omalle käyttäjätililleen.(tehty)\
 -Käyttäjä voi kirjautuneena syöttää omia menoja ja tuloja järjestelmään(tehty)\
--Järjestelmä tallentaa syötetyt tiedot listaksi.\
+-Järjestelmä tallentaa syötetyt tiedot käyttäjän tilille(tehty)\
 -Käyttäjä voi poistaa syötettyjä tapahtumia(tehty)
 ## Jatkokehitysideoita
 Ohjelmaa voidaan kehittää ajan puitteissa esimerkiksi seuraavilla ominaisuuksilla:
