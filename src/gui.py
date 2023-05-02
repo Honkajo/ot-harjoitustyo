@@ -1,6 +1,7 @@
 import tkinter as tk
 from transactions import Budget
 
+
 class WalletTrackerGUI(tk.Tk):
     def __init__(self, transactions_file):
         super().__init__()

@@ -5,24 +5,31 @@ from gui import WalletTrackerGUI
 
 current_user = None
 
+
 def main_account_screen():
+    """Luo alkuikkunan
+    """
     global main_screen
     main_screen = Tk()
     main_screen.geometry("300x250")
     main_screen.title("Kirjautuminen")
-    Button(text="Kirjaudu", height="2", width="30", command=login).pack(pady=(60, 0))
+    Button(text="Kirjaudu", height="2", width="30",
+           command=login).pack(pady=(60, 0))
     Button(text="Rekisteröidy", height="2",
            width="30", command=register).pack(pady=(20, 0))
 
     main_screen.mainloop()
 
+
 def login():
+    """Luo kirjautumisikkunan
+    """
     global login_screen
     global username_verify
     global password_verify
     global username_login_entry
     global password_login_entry
-    
+
     login_screen = Toplevel(main_screen)
     login_screen.title("Kirjaudu sisään")
     login_screen.geometry("300x250")
@@ -44,12 +51,14 @@ def login():
 
 
 def register():
+    """Luo rekisteröinti-ikkunan
+    """
     global register_screen
     global username
     global password
     global username_entry
     global password_entry
-    
+
     register_screen = Toplevel(main_screen)
     register_screen.title("Rekisteröidy")
     register_screen.geometry("300x250")
@@ -68,8 +77,11 @@ def register():
     password_entry.pack()
     Button(register_screen, text="Rekisteröidy", width=10,
            height=1, command=register_user).pack()
-    
+
+
 def login_verify():
+    """Tarkistaa, onko käyttäjätunnus ja salasana jo rekisteröity
+    """
     global username_verify
     global password_verify
     global current_user
@@ -92,7 +104,10 @@ def login_verify():
     else:
         user_not_found()
 
+
 def register_user():
+    """Rekisteröi käyttäjän ja tallentaa käyttäjätunnuksen sekä salasanan tiedostoon sekä luo tiedoston käyttäjän syötettyjä menoja ja tuloja varten
+    """
     username_info = username.get()
     password_info = password.get()
 
@@ -110,16 +125,22 @@ def register_user():
     tk.Label(register_screen, text="Rekisteröinti onnistui",
              fg="green", font=("calibri", 11)).pack()
 
+
 def login_success():
+    """Luo ikkunan kirjautumisen onnistumista varten
+    """
     global login_success_screen
     login_success_screen = Toplevel(login_screen)
     login_success_screen.title("Kirjautuminen onnistui!")
     login_success_screen.geometry("150x100")
     Label(login_success_screen, text="Kirjautuminen onnistui!").pack()
-    Button(login_success_screen, text="OK", command=lambda: move_to_account(current_user)).pack()
+    Button(login_success_screen, text="OK",
+           command=lambda: move_to_account(current_user)).pack()
 
 
 def password_not_recognised():
+    """Luo ikkunan, joka kertoo salasanan olevan väärä
+    """
     global password_not_recog_screen
     password_not_recog_screen = Toplevel(login_screen)
     password_not_recog_screen.title("Onnistui!")
@@ -130,6 +151,8 @@ def password_not_recognised():
 
 
 def user_not_found():
+    """Luo ikkunan, joka kertoo, jos käyttäjätunnusta ei löydy
+    """
     global user_not_found_screen
     user_not_found_screen = Toplevel(login_screen)
     user_not_found_screen.title("Onnistui!")
@@ -138,22 +161,36 @@ def user_not_found():
     Button(user_not_found_screen, text="OK",
            command=delete_user_not_found_screen).pack()
 
+
 def delete_login_success():
+    """Sulkee ikkunan, joka kertoo kirjautumisen onnistumisesta
+    """
     login_success_screen.destroy()
 
 
 def delete_password_not_recognised_screen():
+    """Sulkee ikkunan, joka kertoo, että salasana on väärä
+    """
     password_not_recog_screen.destroy()
 
 
 def delete_user_not_found_screen():
+    """Sulkee ikkunan, joka kertoo, että käyttäjätunnusta ei löydy
+    """
     user_not_found_screen.destroy()
 
+
 def move_to_account(current_user):
+    """Sulkee kirjautumisen onnistumisen kertovan ikkunan ja siirtää näkymän kirjautuneen käyttäjän käyttäjätilille
+
+    Args:
+        current_user (_type_): _description_
+    """
     login_success_screen.destroy()
     main_screen.destroy()
     transactions_file = f"{current_user}_transactions.txt"
     budget_gui = WalletTrackerGUI(transactions_file)
     budget_gui.mainloop()
+
 
 main_account_screen()

@@ -1,6 +1,8 @@
 import os
 
+
 class Transaction:
+
     def __init__(self, amount, description, date):
         self.amount = amount
         self.description = description
@@ -19,6 +21,7 @@ class Revenue(Transaction):
     def __init__(self, amount, description, date):
         super().__init__(abs(amount), description, date)
 
+
 class Budget:
     def __init__(self, transactions_file):
         self.transactions = []
@@ -36,11 +39,12 @@ class Budget:
                     else:
                         transaction = Expense(-amount, description, date)
                     self.transactions.append(transaction)
-    
+
     def save_transactions(self):
         with open(self.transactions_file, 'w') as file:
             for transaction in self.transactions:
-                file.write(f"{transaction.amount}|{transaction.description}|{transaction.date}\n")
+                file.write(
+                    f"{transaction.amount}|{transaction.description}|{transaction.date}\n")
 
     def add_expense(self, amount, description, date):
         expense = Expense(amount, description, date)
