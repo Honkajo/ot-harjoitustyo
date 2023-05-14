@@ -23,12 +23,18 @@ Alkuvalikosta voi valita haluaako kirjautua olemassa olevalle käyttäjälle vai
 
 ## Rekisteröinti
 
-Klikkaamalla rekisteröinti-painiketta, aukeaa rekisteröintinäkymä, jossa voi luoda uuden käyttäjätunnuksen ja salasanan uudelle käyttäjälle:
+Klikkaamalla Rekisteröidy-painiketta alkuvalikossa, aukeaa rekisteröintinäkymä, jossa voi luoda uuden käyttäjätunnuksen ja salasanan uudelle käyttäjälle:
 
 ![](./kuvat/kayttoohje-rekisterointinakyma.png)
 
+Painamalla Rekisteröidy-painiketta ohjelma luo käyttäjätunnuksesi
+
 ## Kirjautuminen
 
+Kun painat Kirjaudu-painiketta alkuvalikossa aukeaa kirjautumisnäkymä:
 
+![](./kuvat/kayttoohje-kirjautumisnakyma.png)
+
+Nyt voi syöttää olemassa olevan käyttäjätunnuksen ja salasanan ja kirjautua tilillesi.
 
 ## Käyttäjätilin näkymä
