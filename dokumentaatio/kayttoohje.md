@@ -1,5 +1,7 @@
 # Käyttöohje
+
 Projektin viimeisimmän releasen saa ladattua klikkaamalla README-tiedoston Lopullinen release-linkkiä ja valitsemalla source code.
+
 ## Ohjelman käynnistys
 
 Asenna ensin riippuvuudet komennolla:
@@ -69,3 +71,4 @@ Kun olet syöttänyt tapahtumia, voi poistaa viimeisimmän tapahtuman painamalla
 
 ![](./kuvat/kayttoohje-tapahtuman-poistaminen.png)
 
+Tililtä pääsee automaattisesti kirjautumaan ulos sulkemalla ohjelman ikkunan oikeassa yläkulmassa olevasta "X"-painikkeesta.
