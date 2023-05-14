@@ -10,10 +10,18 @@ Sovelluksessa on tämän hetken suunnitelman mukaan vain normaali käyttäjä, m
 ![](./kuvat/gui-luonnos.png)
 
 ## Perusversion tarjoama toiminnallisuus
--Käyttäjä voi luoda käyttäjätunnuksen ja salasanan ja kirjautua sisään omalle käyttäjätililleen(tehty)\
--Käyttäjä voi kirjautuneena syöttää omia menoja ja tuloja järjestelmään(tehty)\
--Järjestelmä tallentaa syötetyt tiedot käyttäjän tilille(tehty)\
--Käyttäjä voi poistaa syötettyjä tapahtumia(tehty)
+
+### Ennen kirjautumista
+-Käyttäjä voi luoda käyttäjätunnuksen ja salasanan\
+-Käyttäjä voi kirjautua sisään omalle käyttäjätililleen\
+
+### Kirjautumisen jälkeen
+-Käyttäjä voi syöttää omia menoja ja tuloja järjestelmään\
+-Käyttäjä voi tarkastella syöttämiään tapahtumia\
+-Käyttäjä voi tarkastella nykyistä rahasaldoa\
+-Käyttäjä voi poistaa viimeisimmän syötetyn tapahtuman\
+-Sovellus tallentaa käyttäjän tiedot sekä käyttäjän tilin tapahtumien tiedot
+
 ## Jatkokehitysideoita
 Ohjelmaa voidaan kehittää ajan puitteissa esimerkiksi seuraavilla ominaisuuksilla:
 - Budjettisuunnittelutyökalu: Sovellus voi sisältää työkalun, jonka avulla käyttäjä voi suunnitella päivä-, viikko-, kuukausi- tai vuosibudjetin.
