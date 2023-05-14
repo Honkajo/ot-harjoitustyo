@@ -42,3 +42,30 @@ Nyt voi syöttää olemassa olevan käyttäjätunnuksen ja salasanan ja kirjautu
 Kun olet kirjautunut sisään, aukeaa ohjelman päänäkymä:
 
 ![](./kuvat/kayttoohje-paanakyma.png)
+
+Päänäkymässä voi lisätä menoja ja tuloja, tarkastella tapahtumia ja nykyistä saldoa sekä poistaa viimeisimmän tapahtuman.
+
+## Tapahtumien lisääminen
+
+Saat lisättyä tuloja ja menoja lisäämällä määrän, kuvauksen sekä päivämäärän niitä vastaaviin tekstikenttiin ja painamalla "Lisää tulo" tai "Lisää meno" tapahtuman tyypistä riippuen:
+
+![](./kuvat/kayttoohje-tapahtumien-lisays.png)
+
+## Tapahtumien tarkastelu
+
+Kun olet syöttänyt tapahtumia, voit tarkastela niitä painamalla "Näytä tapahtumat"-painiketta:
+
+![](./kuvat/kayttoohje-tapahtumien-nayttaminen.png)
+
+## Saldon tarkastelu
+
+Kun olet syöttänyt tapahtumia, voit tarkastella tämän hetken saldoa painamalla "Näytä saldo"-painiketta:
+
+![](./kuvat/kayttoohje-saldon-nayttaminen.png)
+
+## Tapahtumien poistaminen
+
+Kun olet syöttänyt tapahtumia, voi poistaa viimeisimmän tapahtuman painamalla "Poista tapahtuma"-painiketta:
+
+![](./kuvat/kayttoohje-tapahtuman-poistaminen.png)
+
