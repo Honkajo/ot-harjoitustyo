@@ -1,8 +1,10 @@
 # Vaatimusmäärittely
 ## Sovelluksen tarkoitus
-Sovelluksen tarkoituksena on tarjota käyttäjälle keinoja seurata ja suunnitella omaa rahankäyttöään. Useampi käyttäjä voi kirjautua sovellukseen ja seurata mihin rahat kuluvat ja suunnitella budjettia vuoden, kuukauden, viikon tai jopa päivän mukaan.
+Sovelluksen tarkoituksena on tarjota käyttäjälle keinoja seurata ja suunnitella omaa rahankäyttöään. Useampi käyttäjä voi kirjautua sovellukseen ja seurata mihin rahat kuluvat syöttämällä tulojaan ja menojaan sovellukseen niin että vain kirjautuneella käyttäjällä on pääsy omiin tapahtumiinsa.
+
 ## Käyttäjät
-Sovelluksessa on tämän hetken suunnitelman mukaan vain normaali käyttäjä, mutta mahdollisesti käyttäjiä saatetaan lisätä projektin edetessä.
+Sovelluksessa on tämän hetken suunnitelman mukaan vain normaali käyttäjä, mutta mahdollisesti käyttäjiä saatetaan lisätä myöhemmin.
+
 ## Käyttöliittymäluonnos
 ## Perusversion tarjoama toiminnallisuus
 -Käyttäjä voi luoda käyttäjätunnuksen ja salasanan ja kirjautua sisään omalle käyttäjätililleen(tehty)\
