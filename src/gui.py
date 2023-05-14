@@ -9,6 +9,7 @@ class WalletTrackerGUI(tk.Tk):
     Args:
         tk (_type_): _description_
     """
+
     def __init__(self, transactions_file):
         super().__init__()
         self.transactions_file = transactions_file

@@ -2,8 +2,10 @@ import os
 
 
 class Transaction:
-    """Konstruktoriluokka, joka kuvaa tapahtumaa, jolla on kolme ominaisuutta: määrä, kuvaus sekä päivämäärä. __str__ - metodi palauttaa tapahtuman merkkijonomuodossa.
+    """Konstruktoriluokka, joka kuvaa tapahtumaa, jolla on kolme ominaisuutta: määrä, 
+    kuvaus sekä päivämäärä. __str__ - metodi palauttaa tapahtuman merkkijonomuodossa.
     """
+
     def __init__(self, amount, description, date):
         self.amount = amount
         self.description = description
@@ -14,30 +16,39 @@ class Transaction:
 
 
 class Expense(Transaction):
-    """Expense-luokka perii Transaction-luokan ominaisuudet ja metodit, mutta muuttaa määrän negatiiviseksi ottamalla arvosta itseisarvon ja lisäämällä miinus-merkin perään
+    """Expense-luokka perii Transaction-luokan ominaisuudet ja metodit, 
+    mutta muuttaa määrän negatiiviseksi ottamalla arvosta itseisarvon ja 
+    lisäämällä miinus-merkin perään
 
     Args:
         Transaction (_type_): _description_
     """
+
     def __init__(self, amount, description, date):
         super().__init__(-abs(amount), description, date)
 
 
 class Revenue(Transaction):
-    """Revenue-luokka perii Transaction-luokan ominaisuudet ja metodit ja ottaa määrä-attribuutista itseisarvon
+    """Revenue-luokka perii Transaction-luokan ominaisuudet ja 
+    metodit ja ottaa määrä-attribuutista itseisarvon
 
     Args:
         Transaction (_type_): _description_
     """
+
     def __init__(self, amount, description, date):
         super().__init__(abs(amount), description, date)
 
 
 class Budget:
-    """Luokka hallinnoi käyttäjien tiedostoja, joihin on tallennettu syötetyt tapahtumat sekä hakee ja esittää tiedot käyttäjälle käyttäjän niin halutessaan 
+    """Luokka hallinnoi käyttäjien tiedostoja, joihin on tallennettu syötetyt tapahtumat 
+    sekä hakee ja esittää tiedot käyttäjälle käyttäjän niin halutessaan 
     """
+
     def __init__(self, transactions_file):
-        """Alustaa listan, johon käyttäjän tiedostoon tallennetut tapahtumat siirretään niiden latauksen jälkeen. Sen lisäksi myös lataa tapahtumat tiedostosta, kun olio luodaan
+        """Alustaa listan, johon käyttäjän tiedostoon tallennetut tapahtumat 
+        siirretään niiden latauksen jälkeen. 
+        Sen lisäksi myös lataa tapahtumat tiedostosta, kun olio luodaan
 
         Args:
             transactions_file (_type_): _description_
@@ -47,8 +58,11 @@ class Budget:
         self.load_transactions()
 
     def load_transactions(self):
-        """Avaa tiedoston, johon käyttäjän tapahtumat on tallennettu. Lukee jokaisen rivin tiedostosta ja jakaa ne |-merkillä. Jakaa tapahtumat menoihin ja tuloihin sen mukaan,
-        ovatko ne negatiivisia vai positiivisia. Lisää tulot ja menot aikaisemmin luotuun transactions-listaan
+        """Avaa tiedoston, johon käyttäjän tapahtumat on tallennettu. 
+        Lukee jokaisen rivin tiedostosta ja 
+        jakaa ne |-merkillä. Jakaa tapahtumat menoihin ja tuloihin sen mukaan,
+        ovatko ne negatiivisia vai positiivisia. Lisää tulot ja 
+        menot aikaisemmin luotuun transactions-listaan
         """
         if os.path.exists(self.transactions_file):
             with open(self.transactions_file, 'r') as file:
@@ -94,7 +108,8 @@ class Budget:
         self.save_transactions()
 
     def display_transactions(self):
-        """Muuttaa kaikki tapahtumat merkkijonoiksi ja yhdistää ne rivinvaihtomerkeillä. Lopuksi palauttaa merkkijonon
+        """Muuttaa kaikki tapahtumat merkkijonoiksi ja yhdistää ne rivinvaihtomerkeillä. 
+        Lopuksi palauttaa merkkijonon
 
         Returns:
             _type_: _description_

@@ -50,7 +50,8 @@ class TestBudget(unittest.TestCase):
         self.budget.add_expense(50, "Uusi testimeno", "2023-05-11")
         self.assertEqual(len(self.budget.transactions), 3)
         self.assertEqual(self.budget.transactions[2].amount, -50)
-        self.assertEqual(self.budget.transactions[2].description, "Uusi testimeno")
+        self.assertEqual(
+            self.budget.transactions[2].description, "Uusi testimeno")
         self.assertEqual(self.budget.transactions[2].date, "2023-05-11")
 
     def test_add_revenue(self):
