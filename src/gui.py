@@ -3,6 +3,12 @@ from transactions import Budget
 
 
 class WalletTrackerGUI(tk.Tk):
+    """Määrittelee käyttäjän tilin näkymän, johon sisältyy painikkeet toimintoineen, tekstikentät ja niiden sijainnit. 
+    Lisäksi myös tekstien, painikkeiden ja ikkunan koot.
+
+    Args:
+        tk (_type_): _description_
+    """
     def __init__(self, transactions_file):
         super().__init__()
         self.transactions_file = transactions_file
@@ -63,6 +69,9 @@ class WalletTrackerGUI(tk.Tk):
         self.delete_transaction_button.grid(row=6, column=2, padx=10, pady=10)
 
     def add_expense(self):
+        """Hakee graafisessa käyttöliittymässä syötetyn menon määrän ja muuttaa sen liukuluvuksi. Lisäksi hakee myös tapahtuman kuvauksen ja päivämäärän.
+        Meno lisätään transactions-listaan. Lopuksi poistaa syötetyt tiedot tekstikentistä.
+        """
         amount = float(self.amount_entry.get())
         description = self.description_entry.get()
         date = self.date_entry.get()
@@ -72,6 +81,9 @@ class WalletTrackerGUI(tk.Tk):
         self.date_entry.delete(0, tk.END)
 
     def add_revenue(self):
+        """Hakee graafisessa käyttöliittymässä syötetyn tulon määrän ja muuttaa sen liukuluvuksi. Lisäksi hakee myös tapahtuman kuvauksen ja päivämäärän.
+        Meno lisätään transactions-listaan. Lopuksi tyhjentää tekstikentät.
+        """
         amount = float(self.amount_entry.get())
         description = self.description_entry.get()
         date = self.date_entry.get()
@@ -81,16 +93,26 @@ class WalletTrackerGUI(tk.Tk):
         self.date_entry.delete(0, tk.END)
 
     def display_transactions(self):
+        """Poistaa transactions_text-tekstikentästä kaiken siinä olevan tekstin. "1.0" viittaa ensimmäisen rivin ensimmäiseen merkkiin ja tk.END koko tekstin loppuun.
+        Kutsuu display_transactions-metodia, joka palauttaa tapahtumat yhtenä merkkijonona ja lisää tämän merkkijonon tekstikenttään, jossa tapahtumat näkyvät.
+        """
         transactions = self.budget.display_transactions()
         self.transactions_text.delete("1.0", tk.END)
         self.transactions_text.insert(tk.END, transactions)
 
     def display_balance(self):
+        """Hakee nykyisen saldon Budget-oliosta, poistaa olemassa olevan tekstin saldoa vastaavasta tekstikentästä graafisessa käyttöliittymässä ja
+        lisää nykyisen saldon kahden desimaalin tarkkuudella saldon tekstikenttään
+        """
         balance = self.budget.get_balance()
         self.balance_text.delete("1.0", tk.END)
-        self.balance_text.insert(tk.END, f"${balance:.2f}")
+        self.balance_text.insert(tk.END, f"{balance:.2f}€")
 
     def delete_transaction(self):
+        """Hakee nykyisen rivin indeksin transactions_text kentästä. Metodi jakaa merkkijonon ensimmäisen "."-merkin jälkeen ja 
+        ottaa kyseistä merkkiä edeltävän tekstin, mikä sattuu olemaan rivin rivinumero. Koska tkinterissä tekstikentässä rivinumerot alkavat 1:stä ja 
+        Pythonin listat alkavat 0:sta, tulee indeksi kokonaislukumuodosta vähentää 1:ksi. Tämän jälkeen indeksiä vastaava tapahtuma poistetaan ja tapahtumat näytetään uudestaa
+        """
         index = self.transactions_text.index(tk.CURRENT).split('.', 1)[0]
         index = int(index) - 1
         self.budget.delete_transaction(index)

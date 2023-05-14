@@ -132,7 +132,7 @@ def login_success():
     global login_success_screen
     login_success_screen = Toplevel(login_screen)
     login_success_screen.title("Kirjautuminen onnistui!")
-    login_success_screen.geometry("150x100")
+    login_success_screen.geometry("300x100")
     Label(login_success_screen, text="Kirjautuminen onnistui!").pack()
     Button(login_success_screen, text="OK",
            command=lambda: move_to_account(current_user)).pack()
@@ -143,8 +143,8 @@ def password_not_recognised():
     """
     global password_not_recog_screen
     password_not_recog_screen = Toplevel(login_screen)
-    password_not_recog_screen.title("Onnistui!")
-    password_not_recog_screen.geometry("150x100")
+    password_not_recog_screen.title("Kirjautuminen epäonnistui!")
+    password_not_recog_screen.geometry("300x100")
     Label(password_not_recog_screen, text="Väärä salasana!").pack()
     Button(password_not_recog_screen, text="OK",
            command=delete_password_not_recognised_screen).pack()
@@ -155,8 +155,8 @@ def user_not_found():
     """
     global user_not_found_screen
     user_not_found_screen = Toplevel(login_screen)
-    user_not_found_screen.title("Onnistui!")
-    user_not_found_screen.geometry("200x100")
+    user_not_found_screen.title("Kirjautuminen epäonnistui!")
+    user_not_found_screen.geometry("300x100")
     Label(user_not_found_screen, text="Käyttäjätunnusta ei löydy").pack()
     Button(user_not_found_screen, text="OK",
            command=delete_user_not_found_screen).pack()
