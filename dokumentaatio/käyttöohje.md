@@ -38,3 +38,7 @@ Kun painat Kirjaudu-painiketta alkuvalikossa aukeaa kirjautumisnäkymä:
 Nyt voi syöttää olemassa olevan käyttäjätunnuksen ja salasanan ja kirjautua tilillesi.
 
 ## Käyttäjätilin näkymä
+
+Kun olet kirjautunut sisään, aukeaa ohjelman päänäkymä:
+
+![](./kuvat/kayttoohje-paanakyma.png)
