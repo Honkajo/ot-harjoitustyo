@@ -6,6 +6,9 @@ Sovelluksen tarkoituksena on tarjota käyttäjälle keinoja seurata ja suunnitel
 Sovelluksessa on tämän hetken suunnitelman mukaan vain normaali käyttäjä, mutta mahdollisesti käyttäjiä saatetaan lisätä myöhemmin.
 
 ## Käyttöliittymäluonnos
+
+![](./kuvat/gui-luonnos.png)
+
 ## Perusversion tarjoama toiminnallisuus
 -Käyttäjä voi luoda käyttäjätunnuksen ja salasanan ja kirjautua sisään omalle käyttäjätililleen(tehty)\
 -Käyttäjä voi kirjautuneena syöttää omia menoja ja tuloja järjestelmään(tehty)\
