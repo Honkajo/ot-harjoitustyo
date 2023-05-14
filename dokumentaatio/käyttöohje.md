@@ -19,8 +19,16 @@ Sovellus käynnistyy alkuvalikkoon:
 
 ![](./kuvat/kayttoohje-alkuvalikko.png)
 
-## Kirjautuminen
+Alkuvalikosta voi valita haluaako kirjautua olemassa olevalle käyttäjälle vai luoda täysin uuden käyttäjän
 
 ## Rekisteröinti
+
+Klikkaamalla rekisteröinti-painiketta, aukeaa rekisteröintinäkymä, jossa voi luoda uuden käyttäjätunnuksen ja salasanan uudelle käyttäjälle:
+
+![](./kuvat/kayttoohje-rekisterointinakyma.png)
+
+## Kirjautuminen
+
+
 
 ## Käyttäjätilin näkymä
