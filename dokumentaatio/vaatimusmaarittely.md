@@ -13,7 +13,7 @@ Sovelluksessa on tämän hetken suunnitelman mukaan vain normaali käyttäjä, m
 
 ### Ennen kirjautumista
 -Käyttäjä voi luoda käyttäjätunnuksen ja salasanan\
--Käyttäjä voi kirjautua sisään omalle käyttäjätililleen\
+-Käyttäjä voi kirjautua sisään omalle käyttäjätililleen
 
 ### Kirjautumisen jälkeen
 -Käyttäjä voi syöttää omia menoja ja tuloja järjestelmään\
