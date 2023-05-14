@@ -8,7 +8,7 @@ Sovelluksen toimintaa on testattu Python-versiolla `3.8`.
 
 ## Dokumentaatio
 
-- [Käyttöohje](./dokumentaatio/käyttöohje.md)
+- [Käyttöohje](./dokumentaatio/kayttoohje.md)
 - [Vaatimusmäärittely](./dokumentaatio/vaatimusmaarittely.md)
 - [Arkkitehtuurikuvaus](./dokumentaatio/arkkitehtuuri.md)
 - [Työaikakirjanpito](./dokumentaatio/tuntikirjanpito.md)
