@@ -15,4 +15,7 @@
 | 25.4. | 8    | Ohjelmaan lisätty ominaisuus poistaa syötettyjä tapahtumia. Invoke-taskien luonti.
 | 28.4. | 3    | Uuden toiminnallisuuden luonnin aloittaminen
 | 28.4. | 6    | Käyttäjän syöttämien menojen ja tulojen tallentaminen erilliseen tiedostoon
-| yht   | 56   |
+| 8.5.  | 3    | Testien muokkaaminen järkevämpään muotoon
+| 9.4.  | 4    | Docstring-dokumentaation teko sekä dokumentaation kirjoittamista
+| 14.5. | 6    | Ohjelman viimeistelyä siisteyden sekä dokumentaation osalta
+| yht   | 69   |
