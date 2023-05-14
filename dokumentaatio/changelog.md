@@ -33,3 +33,8 @@
 
 - Käyttäjän syöttämät menot ja tulot tallentuvat erilliseen tiedostoon
 - Alkuikkuna sekä kirjautumisikkuna sulkeutuvat käyttäjätilille siirryttäessä
+
+## Viikko 7
+
+- Lisätty docstring-dokumentaatiot tiedostoihin
+- Testitiedostoa muokattu mieleisemmäksi
