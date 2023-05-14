@@ -19,7 +19,7 @@ Sovellus käynnistyy alkuvalikkoon:
 
 ![](./kuvat/kayttoohje-alkuvalikko.png)
 
-Alkuvalikosta voi valita haluaako kirjautua olemassa olevalle käyttäjälle vai luoda täysin uuden käyttäjän
+Alkuvalikosta voit valita haluaako kirjautua olemassa olevalle käyttäjälle vai luoda täysin uuden käyttäjän
 
 ## Rekisteröinti
 
@@ -35,7 +35,7 @@ Kun painat Kirjaudu-painiketta alkuvalikossa aukeaa kirjautumisnäkymä:
 
 ![](./kuvat/kayttoohje-kirjautumisnakyma.png)
 
-Nyt voi syöttää olemassa olevan käyttäjätunnuksen ja salasanan ja kirjautua tilillesi.
+Nyt voit syöttää olemassa olevan käyttäjätunnuksen ja salasanan ja kirjautua tilillesi.
 
 ## Käyttäjätilin näkymä
 
@@ -43,7 +43,7 @@ Kun olet kirjautunut sisään, aukeaa ohjelman päänäkymä:
 
 ![](./kuvat/kayttoohje-paanakyma.png)
 
-Päänäkymässä voi lisätä menoja ja tuloja, tarkastella tapahtumia ja nykyistä saldoa sekä poistaa viimeisimmän tapahtuman.
+Päänäkymässä voit lisätä menoja ja tuloja, tarkastella tapahtumia ja nykyistä saldoa sekä poistaa viimeisimmän tapahtuman.
 
 ## Tapahtumien lisääminen
 
